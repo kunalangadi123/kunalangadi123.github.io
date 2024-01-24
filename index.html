@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(to bottom right, #007bff, #00bfff82), url('IIIT-Hyderbad.png') center/cover no-repeat;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .logo {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        .login-button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-bottom: 20px; /* Add margin to bottom */
+            display: block; /* Make it a block element to center-align */
+            margin: 0 auto; /* Center-align the block element */
+        }
+
+        .forgot-password,
+        .reset-password {
+            margin-top: 10px;
+            color: #007bff;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        /* Display "Forgot Password" and "Reset Password" side by side */
+        .forgot-password {
+            margin-right: 5px;
+        }
+
+        .vertical-line {
+            width: 2px;
+            height: 25px;
+            background-color: #000;
+            display: inline-block;
+        }
+
+        .note {
+            font-size: 14px;
+            color: #333;
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        /* Add CAS title styles */
+        .cas-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+    </style>
+    <title>CAS Login</title>
+</head>
+<body>
+    <div class="login-container">
+        <div class="cas-title">Central Authentication System (CAS)</div>
+        <img src="iiith-logo.png" alt="IIIT Hyderabad Logo" class="logo">
+        <div class="input-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="input-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <button class="login-button">Login</button>
+        <div>
+            <a href="#" class="forgot-password">Forgot Password</a>
+            <span class="vertical-line" style="margin-top: 10px;"></span>
+            <a href="#" class="reset-password" style="margin-left: 4px;">Reset Password</a>
+        </div>
+        <div class="note">
+            <p>Note:</p>
+            <ul>
+                <li>Since CAS does not support Single Sign-Out as of now, please make sure you logout from all the applications and close the browser window when you have finished using the system.</li>
+                <li>IT Support will NEVER ask for your password and/or any other personal information. Please do not reply to any such mail and report them immediately to IT support.</li>
+                <li>It is recommended you choose a strong password since this single password is your gateway to all the computing resources at IIIT-H.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
